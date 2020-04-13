@@ -5,6 +5,6 @@
         <a [title]="product.description" [routerLink]="['/products', productId]">
             {{ product.name }}
         </a>
-        <h4 *ngIf="product.price">{{ product.price }}</h4>
+        <h4 *ngIf="product.price">{{ product.price | currency }}</h4>
     </li>
 </ul>
