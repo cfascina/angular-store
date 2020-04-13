@@ -1,0 +1,6 @@
+<h3>Shipping Taxes</h3>
+
+<div class="shipping-item" *ngFor="let tax of shippingTax | async">
+  <span>{{ tax.type }}</span>
+  <span>{{ tax.price | currency }}</span>
+</div>
